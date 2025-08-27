@@ -66,8 +66,5 @@ git clone https://github.com/Kvidi/The_Post.git
 - Manage subscriptions: create, edit, delete, view details
 - View subscription statistics
 
-## License
-This project is licensed under the MIT License.
-
 ## Authors
 - Team Post
