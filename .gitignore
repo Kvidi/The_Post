@@ -365,8 +365,7 @@ FodyWeavers.xsd
 /ArchiveArticles
 
 # Ignore appsettings
-appsettings*.json
+appsettings.Development.json
 
-# Ignore Azure local settings
-local.settings.json
-*.local.json
+# Ignore Azure Function local settings
+SaveElectricityPrices_Isolated/local.settings.json
