@@ -39,33 +39,34 @@ git clone https://github.com/Kvidi/The_Post.git
 2. Open the solution in Visual Studio 2022 (`The_Post.sln`).
 3. Restore NuGet packages.
 4. Copy the placeholder `appsettings.Template.json` to `appsettings.Development.json`  
-  (`appsettings.Development.json` is ignored by Git for security reasons).  
+    (`appsettings.Development.json` is ignored by Git for security reasons).  
 
-  Then provide your own values for:
-  - **Database connection string**
-  - **Azure Blob Storage:**
-    - `ConnectionString`
-    - `ContainerName`
-  - **Azure Table Storage:**
-    - `ConnectionString:AzureWebJobsStorage`
-  - **Email (SMTP) settings:**
-    - `SmtpServer`
-    - `SmtpPort`
-    - `SmtpUsername`
-    - `SmtpPassword`
-    - `SenderEmail`
-    - `SenderName`
-    - `EnableSsl`
-  - **Stripe:**
-    - `ApiKey`
+    Then provide your own values for:
+    - **Database connection string**
+    - **Azure Blob Storage:**
+        - `ConnectionString`
+        - `ContainerName`
+    - **Azure Table Storage:**
+        - `ConnectionString:AzureWebJobsStorage`
+    - **Email (SMTP) settings:**
+        - `SmtpServer`
+        - `SmtpPort`
+        - `SmtpUsername`
+        - `SmtpPassword`
+        - `SenderEmail`
+        - `SenderName`
+        - `EnableSsl`
+    - **Stripe:**
+        - `ApiKey`
  
 5. Setup Azure Function `SaveElectricityPrices_Isolated`:  
-  Copy `local.settings.Template.json` to `local.settings.json`  
-  (`local.settings.json` is ignored by Git).  
-  
-  Provide your own values for:
+    Copy `local.settings.Template.json` to `local.settings.json`  
+    (`local.settings.json` is ignored by Git).  
+
+    Provide your own values for:
     - **AzureWebJobsStorage** (`Azure Storage connection string`)
-    - **FUNCTIONS_WORKER_RUNTIME** (`dotnet-isolated`) 
+    - **FUNCTIONS_WORKER_RUNTIME** (`dotnet-isolated`)
+
   
 6. Run the database migrations to set up the database schema.
    - Open the Package Manager Console in Visual Studio.
