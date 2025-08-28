@@ -29,7 +29,7 @@ I developed frontend and backend designs for the Admin panel with features like 
 - Article, employee, role and subscriptions management
 - Dashboard & statistics with Chart.js
 - Subscription with Stripe payment integration
-- Front page & database designs
+- Front page & database designs 
 
 ## Installation
 1. Clone the repository:
@@ -39,9 +39,9 @@ git clone https://github.com/Kvidi/The_Post.git
 2. Open the solution in Visual Studio 2022 (`The_Post.sln`).
 3. Restore NuGet packages.
 4. Copy the placeholder `appsettings.Template.json` to `appsettings.Development.json`  
-  (`appsettings.Development.json` is ignored by Git for security reasons`).  
+  (`appsettings.Development.json` is ignored by Git for security reasons).  
 
-  Then provide your own values for:  
+  Then provide your own values for:
   - **Database connection string**
   - **Azure Blob Storage:**
     - `ConnectionString`
@@ -62,6 +62,7 @@ git clone https://github.com/Kvidi/The_Post.git
 5. Setup Azure Function `SaveElectricityPrices_Isolated`:  
   Copy `local.settings.Template.json` to `local.settings.json`  
   (`local.settings.json` is ignored by Git).  
+  
   Provide your own values for:
     - **AzureWebJobsStorage** (`Azure Storage connection string`)
     - **FUNCTIONS_WORKER_RUNTIME** (`dotnet-isolated`) 
